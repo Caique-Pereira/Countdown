@@ -1,0 +1,210 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: #000;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+html,body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+}
+
+#container{
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+#Titulo{
+    font-size: clamp(2rem, 3.8vw, 3.1rem);
+    color: #21EB00;
+}
+
+#Informardata{
+    font-size: 2rem;
+    color: #91978e;
+
+}
+
+#data{
+    border: none;
+    border-radius: 30px;
+    background-color: #191A18;
+    min-width: 25%;
+    height: 10%;
+    
+
+    color: #91978e;
+    font-size: 1.5rem;
+    padding-left: 26px;
+    text-transform: uppercase;
+}
+
+
+.btn{
+
+    border: none;
+    border-radius: 30px;
+    min-width: 25%;
+    height: 10%;
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: #21EB00;
+    padding: 0px 5px 0px 5px;
+    
+   cursor: pointer;
+}
+
+.btn:hover{
+    animation: up 1s ease-in-out;
+    background-color:#22ff00;;
+
+}
+
+@keyframes up{
+    0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1.05);
+      }
+}
+
+input:focus{    
+    outline: none;
+    }
+
+#container,#Titulo,#Informardata,#data,#btn{
+
+    margin-bottom: 2%;
+}
+
+/*-------------------- pagina2---------------------------*/
+
+header{
+
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 90%;
+    height: 20%;
+    display: flex;
+}
+
+#Titulo3{
+    
+    font-size: clamp(2rem, 3.8vw, 3.1rem);
+    color: #21EB00;
+    margin: auto 0px auto 0px ;
+}
+
+
+#btn2{
+    
+    border: none;
+    min-width: 22%;
+    height: 40%;
+    border-radius: 20px;
+    margin: auto 0px auto 0px;
+    
+    
+    font-size: clamp( 1.3rem, 2vw, 2.4rem);
+    font-weight: 700;
+    background-color: #21EB00;
+    padding: 0px 5px 0px 5px;
+   
+    
+   cursor: pointer;
+
+}
+
+#btn2:hover{
+    animation: up 1s ease-in-out;
+    background-color:#22ff00;;
+
+}
+
+#container2{
+    width: 100%;
+    height: 79vh;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+#Titulo2{
+    font-size: 3.5rem;
+    color: #91978e;
+
+}
+
+#tempo{
+ 
+    display: flex;
+    flex-direction: row;
+    color: #ffffffc5;
+    width: 70%;
+    justify-content: space-evenly;
+
+}
+
+.Ccontainer{
+
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.alinha{
+    font-size: clamp(1rem, 8vw, 8rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.legenda{
+    font-size: clamp(1rem, 1.8vw, 2rem);
+    font-weight: bold;
+    color:#21EB00;
+}
+
+/*-------------------- responsividade ---------------------------*/
+
+@media (max-width: 600px){
+    #tempo{
+        width: 100%;
+        height: 40%;
+    }
+
+    .alinha{
+
+        font-size: 3rem;
+    }
+
+    .legenda{
+
+        width: 100%;
+        text-align: center;
+
+    }
+}
+
